@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade / Privacy Policy — bentoBOX</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #1c1e26;
+      --muted: #5a6072;
+      --accent: #6c63ff;
+      --accent-soft: #edeaff;
+      --border: #e5e7f0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11131a;
+        --card: #1a1d28;
+        --text: #f1f3f9;
+        --muted: #a0a7bd;
+        --accent: #8f88ff;
+        --accent-soft: #262342;
+        --border: #2a2e3f;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px 64px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .brand-badge {
+      display: inline-block;
+      width: fit-content;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .brand h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .brand p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      background: var(--bg);
+      padding: 6px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--card);
+      color: var(--accent);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    }
+
+    .updated {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 26px;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 14px;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    ul {
+      margin: 10px 0 16px 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .highlight-box {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      header, .card {
+        padding: 22px 20px;
+        border-radius: 20px;
+      }
+      .brand h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <span class="brand-badge">BentoLabs Studio</span>
+        <h1>bentoBOX</h1>
+        <p id="subtitle">Política de Privacidade • Sua caixa favorita de widgets</p>
+      </div>
+      <div class="lang-switch" role="tablist">
+        <button class="lang-btn active" id="btn-pt" onclick="setLang('pt')">Português</button>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+      </div>
+    </header>
+
+    <!-- VERSÃO EM PORTUGUÊS -->
+    <main id="content-pt" class="card">
+      <div class="updated"><strong>Última atualização:</strong> 18 de novembro de 2026</div>
+
+      <p>
+        <strong>Bruno Henrique da Silva Souza (BentoLabs Studio)</strong> desenvolveu o aplicativo <strong>bentoBOX</strong> como um aplicativo freemium. Este serviço é fornecido sem custos para os recursos básicos, com opções de desbloqueio de recursos adicionais, e destina-se a ser utilizado como está.
+      </p>
+      <p>
+        Esta Política de Privacidade explica quais permissões e dados locais do dispositivo o <strong>bentoBOX</strong> acessa exclusivamente para exibir informações nos widgets da sua tela inicial.
+      </p>
+
+      <h2>1. Processamento Local e Coleta de Dados</h2>
+      <p>
+        O <strong>bentoBOX</strong> não exige criação de conta e <strong>não coleta, armazena ou vende dados pessoais</strong> (como nome, e-mail, contatos ou histórico de localização) em servidores próprios. Todas as informações exibidas nos widgets são lidas e processadas diretamente no seu dispositivo Android.
+      </p>
+
+      <h2>2. Permissões do Dispositivo e Finalidade</h2>
+      <p>
+        Cada permissão solicitada pelo aplicativo é opcional e ativada apenas quando você opta por utilizar o widget correspondente:
+      </p>
+      <ul>
+        <li><strong>Localização (GPS):</strong> Utilizada exclusivamente para obter a previsão do tempo e condições climáticas locais no widget de clima.</li>
+        <li><strong>Agenda (Calendário):</strong> Utilizada para exibir seus próximos compromissos e eventos diretamente no widget de agenda.</li>
+        <li><strong>Contatos:</strong> Utilizada apenas para permitir que você selecione contatos favoritos e crie atalhos rápidos de chamada ou mensagem nos widgets.</li>
+        <li><strong>Bluetooth e Dispositivos Próximos:</strong> Utilizados para identificar dispositivos pareados (como fones de ouvido e smartwatches) e exibir seus respectivos níveis de bateria.</li>
+        <li><strong>Acesso a Notificações e Reprodução de Mídia:</strong> Utilizado para detectar músicas em reprodução no aparelho (título, artista e controles de mídia) e exibir alertas nos widgets compatíveis.</li>
+        <li><strong>Execução em Segundo Plano e Alarmes Exatos:</strong> Utilizados para manter o relógio, clima e dados dos widgets sincronizados e atualizados na tela inicial.</li>
+      </ul>
+
+      <h2>3. Dados de Saúde (Google Health Connect)</h2>
+      <div class="highlight-box">
+        O uso de informações recebidas das APIs do <strong>Health Connect (Google Health)</strong> pelo <strong>bentoBOX</strong> segue rigorosamente a <em>Política de Permissões do Health Connect</em>, incluindo os requisitos de <strong>Uso Limitado</strong>.
+      </div>
+      <ul>
+        <li>Os dados de saúde e atividade física (como contagem de passos ou metas diárias) são lidos exclusivamente para exibição visual nos widgets escolhidos pelo usuário.</li>
+        <li>Esses dados permanecem estritamente no dispositivo e <strong>nunca</strong> são transferidos, vendidos ou compartilhados com terceiros, corretores de dados ou plataformas de publicidade.</li>
+      </ul>
+
+      <h2>4. Compras no Aplicativo e Serviços de Terceiros</h2>
+      <p>
+        O aplicativo utiliza serviços oficiais do Google para distribuição, processamento de compras internas e estabilidade, que possuem suas próprias políticas de privacidade:
+      </p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services & Google Play Billing</a> (processamento seguro de compras e desbloqueio de recursos Pro; não temos acesso aos dados do seu cartão ou pagamento)</li>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a> (relatórios anônimos de falhas técnicas para melhoria de estabilidade, quando aplicável)</li>
+      </ul>
+
+      <h2>5. Segurança dos Dados</h2>
+      <p>
+        Como todas as preferências, contatos selecionados e métricas exibidas nos widgets são armazenados localmente no armazenamento protegido do seu Android, o risco de exposição externa é minimizado. Caso você desinstale o aplicativo, todas as configurações locais são removidas.
+      </p>
+
+      <h2>6. Privacidade de Crianças</h2>
+      <p>
+        Este aplicativo não se destina a menores de 13 anos e não coleta intencionalmente informações pessoalmente identificáveis de crianças.
+      </p>
+
+      <h2>7. Alterações nesta Política</h2>
+      <p>
+        Esta Política de Privacidade pode ser atualizada periodicamente conforme novos widgets ou recursos forem adicionados ao <strong>bentoBOX</strong>. Recomendamos revisar esta página ocasionalmente.
+      </p>
+
+      <h2>8. Contato</h2>
+      <p>
+        Em caso de dúvidas sobre esta Política de Privacidade ou sobre o uso das permissões do aplicativo, entre em contato pelo e-mail:
+        <br />
+        <a href="mailto:bentolabsui@gmail.com">bentolabsui@gmail.com</a>
+      </p>
+    </main>
+
+    <!-- ENGLISH VERSION -->
+    <main id="content-en" class="card hidden">
+      <div class="updated"><strong>Last updated:</strong> November 18, 2026</div>
+
+      <p>
+        <strong>Bruno Henrique da Silva Souza (BentoLabs Studio)</strong> built the <strong>bentoBOX</strong> app as a Freemium app. This service is provided at no cost for core features, with optional paid upgrades, and is intended for use as is.
+      </p>
+      <p>
+        This Privacy Policy explains which device permissions and local data <strong>bentoBOX</strong> accesses strictly to display information on your home screen widgets.
+      </p>
+
+      <h2>1. Local Processing and Data Collection</h2>
+      <p>
+        <strong>bentoBOX</strong> does not require account registration and <strong>does not collect, store, or sell personal data</strong> (such as your name, email address, contacts, or location history) on external servers. All information displayed in widgets is read and processed locally on your Android device.
+      </p>
+
+      <h2>2. Device Permissions and Purpose</h2>
+      <p>
+        Each permission requested by the app is optional and only triggered when you choose to configure the corresponding widget:
+      </p>
+      <ul>
+        <li><strong>Location (GPS):</strong> Used solely to retrieve local weather forecasts and conditions for the weather widget.</li>
+        <li><strong>Calendar:</strong> Used to display your upcoming schedules and events directly inside the calendar widget.</li>
+        <li><strong>Contacts:</strong> Used only to allow you to pick favorite contacts and create quick call or message shortcuts on your widgets.</li>
+        <li><strong>Bluetooth & Nearby Devices:</strong> Used to detect paired accessories (such as earbuds and smartwatches) and display their battery levels.</li>
+        <li><strong>Notification Access & Media Playback:</strong> Used to detect currently playing media (track title, artist, and playback controls) and show app alerts on supported widgets.</li>
+        <li><strong>Background Execution & Exact Alarms:</strong> Used to keep clocks, weather, and widget data updated reliably on your home screen.</li>
+      </ul>
+
+      <h2>3. Health Data (Google Health Connect)</h2>
+      <div class="highlight-box">
+        The use of information received from <strong>Health Connect (Google Health)</strong> APIs by <strong>bentoBOX</strong> adheres strictly to the <em>Health Connect Permissions Policy</em>, including the <strong>Limited Use</strong> requirements.
+      </div>
+      <ul>
+        <li>Health and fitness metrics (such as step count or daily activity goals) are read solely for visual display within the widgets selected by the user.</li>
+        <li>This data remains strictly on your device and is <strong>never</strong> transferred, sold, or shared with third parties, data brokers, or advertising platforms.</li>
+      </ul>
+
+      <h2>4. In-App Purchases and Third-Party Services</h2>
+      <p>
+        The app relies on official Google services for distribution, in-app purchase processing, and crash diagnostics, each governed by their own Privacy Policies:
+      </p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services & Google Play Billing</a> (secure processing of Pro feature unlocks; we never access your credit card or billing details)</li>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a> (anonymous crash diagnostics to improve app stability, where applicable)</li>
+      </ul>
+
+      <h2>5. Data Security</h2>
+      <p>
+        Because all widget preferences, selected contacts, and displayed metrics remain stored locally within your Android device's sandboxed storage, external exposure risks are minimized. Uninstalling the app removes all locally stored settings.
+      </p>
+
+      <h2>6. Children’s Privacy</h2>
+      <p>
+        This application does not address anyone under the age of 13 and does not knowingly collect personally identifiable information from children.
+      </p>
+
+      <h2>7. Changes to This Privacy Policy</h2>
+      <p>
+        We may update our Privacy Policy from time to time as new widgets or features are added to <strong>bentoBOX</strong>. You are advised to review this page periodically for any changes.
+      </p>
+
+      <h2>8. Contact Us</h2>
+      <p>
+        If you have any questions or suggestions about this Privacy Policy or app permissions, please contact us at:
+        <br />
+        <a href="mailto:bentolabsui@gmail.com">bentolabsui@gmail.com</a>
+      </p>
+    </main>
+
+    <footer>
+      © 2026 BentoLabs Studio • bentoBOX
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      const pt = document.getElementById('content-pt');
+      const en = document.getElementById('content-en');
+      const btnPt = document.getElementById('btn-pt');
+      const btnEn = document.getElementById('btn-en');
+      const subtitle = document.getElementById('subtitle');
+
+      if (lang === 'en') {
+        pt.classList.add('hidden');
+        en.classList.remove('hidden');
+        btnEn.classList.add('active');
+        btnPt.classList.remove('active');
+        subtitle.textContent = 'Privacy Policy • Your favorite box of widgets';
+      } else {
+        en.classList.add('hidden');
+        pt.classList.remove('hidden');
+        btnPt.classList.add('active');
+        btnEn.classList.remove('active');
+        subtitle.textContent = 'Política de Privacidade • Sua caixa favorita de widgets';
+      }
+    }
+  </script>
+</body>
+</html>
